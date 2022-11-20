@@ -9,7 +9,6 @@ using Syncfusion.PresentationToPdfConverter;
 
 public class Convert : MonoBehaviour
 {
-
     public string _pathToDocx;
     public string _pathToPPTX;
 
@@ -71,6 +70,19 @@ public class Convert : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            WordToPDF();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SlidesToPDF();
         }
     }
 }
